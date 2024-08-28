@@ -91,4 +91,27 @@ function calcularPerdidaAuditiva() {
     document.getElementById('resultadoOD').textContent = `El porcentaje de pérdida auditiva del oído derecho es: ${porcentajeOD}%`;
     document.getElementById('resultadoOI').textContent = `El porcentaje de pérdida auditiva del oído izquierdo es: ${porcentajeOI}%`;
     document.getElementById('resultado').textContent = `El porcentaje de pérdida auditiva bilateral es: ${porcentajeBilateral}%`;
+
+    // Mostrar el botón de limpiar después de calcular los resultados
+    document.getElementById('btnLimpiar').style.display = 'block';
+}
+
+function limpiarDatos() {
+    // Limpiar todos los campos de entrada
+    document.getElementById('dB500_OD').value = '';
+    document.getElementById('dB1000_OD').value = '';
+    document.getElementById('dB2000_OD').value = '';
+    document.getElementById('dB4000_OD').value = '';
+    document.getElementById('dB500_OI').value = '';
+    document.getElementById('dB1000_OI').value = '';
+    document.getElementById('dB2000_OI').value = '';
+    document.getElementById('dB4000_OI').value = '';
+
+    // Limpiar los resultados
+    document.getElementById('resultadoOD').textContent = '';
+    document.getElementById('resultadoOI').textContent = '';
+    document.getElementById('resultado').textContent = '';
+
+    // Ocultar el botón de limpiar
+    document.getElementById('btnLimpiar').style.display = 'none';
 }
