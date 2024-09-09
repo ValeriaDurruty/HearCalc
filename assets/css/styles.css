@@ -1,3 +1,4 @@
+/* Estilos para el body */
 body {
     background-image: url('../img/02.jpg');
     background-size: cover;
@@ -5,22 +6,49 @@ body {
     background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Altura mínima de la pantalla completa */
 }
 
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #afbabd;
+    color: white;
+    text-shadow: #0056b3 4px 4px 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal */
 .container {
     background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
+    width: 90%;
     max-width: 800px;
+    margin: 20px auto; /* Centrará el contenedor y añade margen arriba/abajo */
+    box-sizing: border-box;
+    flex: 1; /* Permite que el contenedor crezca para ocupar el espacio restante */
 }
 
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #afbabd;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
 h1, h2, h3 {
     text-align: center;
 }
@@ -70,4 +98,15 @@ button:hover {
     margin-top: 20px;
     text-align: center;
     font-weight: bold;
+}
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header, footer {
+        padding: 15px;
+    }
 }

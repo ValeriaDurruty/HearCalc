@@ -115,3 +115,21 @@ function limpiarDatos() {
     // Ocultar el botón de limpiar
     document.getElementById('btnLimpiar').style.display = 'none';
 }
+
+// Función para agregar el footer
+function agregarFooter() {
+    const footer = document.createElement('footer');
+    footer.style.textAlign = 'center';
+    footer.style.padding = '10px';
+    footer.style.backgroundColor = '#afbabd';
+    footer.style.color = 'white';
+    footer.style.width = '100%';
+    footer.style.boxSizing = 'border-box';
+
+    footer.innerHTML = 'Aplicación realizada por <a href="https://www.linkedin.com/in/valeria-edith-durruty/" target="_blank" style="color: blue; text-decoration: underline;">Valeria Durruty</a>';
+
+    document.body.appendChild(footer);
+}
+
+// Llamar a la función para agregar el footer al cargar la página
+document.addEventListener('DOMContentLoaded', agregarFooter);
