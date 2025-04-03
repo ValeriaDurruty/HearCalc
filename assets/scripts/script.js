@@ -126,7 +126,7 @@ function agregarFooter() {
     footer.style.width = '100%';
     footer.style.boxSizing = 'border-box';
 
-    footer.innerHTML = 'Aplicación realizada por <a href="https://www.linkedin.com/in/valeria-edith-durruty/" target="_blank" style="color: blue; text-decoration: underline;">Valeria Durruty</a>';
+    footer.innerHTML = 'Aplicación realizada por <a href="https://www.linkedin.com/in/valeria-e-durruty/" target="_blank" style="color: blue; text-decoration: underline;">Valeria Durruty</a>';
 
     document.body.appendChild(footer);
 }
