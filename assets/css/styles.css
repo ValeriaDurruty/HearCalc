@@ -50,6 +50,12 @@ footer {
 
 /* Estilos generales */
 h1, h2, h3 {
+    margin-top: 10px; /* Reduce el margen superior */
+    margin-bottom: 10px; /* Reduce el margen inferior */
+    text-align: center;
+}
+
+p {
     text-align: center;
 }
 
